@@ -20,3 +20,8 @@ cd ~/Arduino/libraries/
 wget https://github.com/micro-ROS/micro_ros_arduino/archive/refs/tags/v2.0.2-foxy.tar.gz
 tar -xvf v2.0.2-foxy.tar.gz
 rm -rf v2.0.2-foxy.tar.gz
+
+echo -e "${GREEN}==== Docker Setup for micro-ros agent ====${NC}"
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
