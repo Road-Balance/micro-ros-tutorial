@@ -27,10 +27,6 @@ sudo usermod -aG docker $USER
 newgrp docker
 
 echo -e "${GREEN}==== ROS 2 Foxy Docker Image Pull ====${NC}"
-docker pull dustynv/ros:foxy-ros-base-l4t-r32.6.1
-
-echo -e "${GREEN}==== ROS 2 Foxy Docker Image Pull ====${NC}"
-docker run -it --name ros-foxy --net=host -v /dev:/dev --privileged dustynv/ros:foxy-ros-base-l4t-r32.6.1
-
+docker pull tge1375/micro-ros-jetson-demo:foxy
 
 
