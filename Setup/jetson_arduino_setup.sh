@@ -26,7 +26,7 @@ fi
 wget https://downloads.arduino.cc/arduino-$ARDUINO_VERSION-linuxaarch64.tar.xz
 tar -xvf arduino-$ARDUINO_VERSION-linuxaarch64.tar.xz
 cd arduino-$ARDUINO_VERSION
-sudo ./install.sh
+./install.sh
 ./arduino-linux-setup.sh $USER
 
 if [ ! $? -eq 0 ]
@@ -51,5 +51,8 @@ chmod 755 TeensyduinoInstall.linuxaarch64
 ./TeensyduinoInstall.linuxaarch64 --dir=$INSTALL_DIR/arduino-$ARDUINO_VERSION
 
 echo -e "${GREEN}==== Udev rules setup ====${NC}"
-wget https://www.pjrc.com/teensy/00-teensy.rules
-sudo cp 00-teensy.rules /etc/udev/rules.d/
+if [ ! -e /etc/udev/rules.d/00-teensy.rules ]; then
+    wget https://www.pjrc.com/teensy/00-teensy.rules
+    sudo cp 00-teensy.rules /etc/udev/rules.d/
+fi
+
