@@ -28,3 +28,13 @@ ros2 run micro_ros_agent micro_ros_agent serial --dev /dev/ttyACM0
 
 ros2 topic echo /micro_ros_arduino_node_publisher
 
+$ ros2 topic echo /std_msgs_msg_Int32
+data: 38
+---
+data: 39
+---
+data: 40
+---
+data: 41
+---
+
