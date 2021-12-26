@@ -25,8 +25,7 @@ echo -e "${GREEN}==== Docker Setup for micro-ros agent ====${NC}"
 sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
+sudo chmod 666 /var/run/docker.sock
 
 echo -e "${GREEN}==== ROS 2 Foxy Docker Image Pull ====${NC}"
 docker pull tge1375/micro-ros-jetson-demo:foxy
-
-
