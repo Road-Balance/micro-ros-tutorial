@@ -3,6 +3,11 @@
 # Reference sites
 # Jetsonhacks : https://www.jetsonhacks.com/2019/10/04/install-arduino-ide-on-jetson-dev-kit/
 
+
+########################################################
+## Run shell without sudo!! Or you cannot launch icon ##
+########################################################
+
 INSTALL_DIR=${HOME}
 # Direct Jetson support starts at 1.8.10
 ARDUINO_VERSION=1.8.13
