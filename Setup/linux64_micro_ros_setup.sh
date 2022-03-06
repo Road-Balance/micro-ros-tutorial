@@ -28,4 +28,4 @@ newgrp docker
 sudo chmod 666 /var/run/docker.sock
 
 echo -e "${GREEN}==== ROS 2 Foxy Docker Image Pull ====${NC}"
-docker pull tge1375/sw-micro-ros:0.0.3
+docker pull tge1375/sw-micro-ros:0.0.4
