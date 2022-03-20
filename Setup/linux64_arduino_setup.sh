@@ -22,7 +22,7 @@ sudo apt install -y git curl wget libfontconfig libxft2 xz-utils rsync
 
 echo -e "${GREEN}==== Installing arduino IDE ====${NC}"
 cd ~/Downloads
-if [ -d ./arduino-$ARDUINO_VERSION-linuxaarch64.tar.xz ]
+if [ -d ./arduino-$ARDUINO_VERSION-linux64.tar.xz ]
 then
 	echo -e "${RED} delete exist folder ${NC}"
 	rm -rf arduino-*
